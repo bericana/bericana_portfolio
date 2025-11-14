@@ -10,7 +10,7 @@
   /* 서브 텍스트 - 중간 밝은 색 */
   --bg: #bb7642;
   /* 메인 배경 - 어두운 색 */
-  --card: #59574F;
+  --card: #916240;
   /* 카드 배경 - 중간 색 */
   --round: 18px;
 
@@ -19,12 +19,12 @@
   --border: rgba(151, 166, 162, 0.2);
 
   /* 액센트 & 포인트 컬러 */
-  --accent: #107243;
+  --accent: #bb7642;
   /* 메인 액센트 - 가장 어두운 색 */
-  --accent1: #107243;
-  --accent2: #107243;
+  --accent1: #bb7642;
+  --accent2: #bb7642;
   --primary-color: #ba9478;
-  --primary-color-full: #107243;
+  --primary-color-full: #bb7642;
 
   /* 포인트 컬러 - 기존 컬러 팔레트 내에서 변형 */
   --accent3: #231e20;
@@ -32,17 +32,17 @@
   --point-color1: #231e20;
   --point-color2: #E9EDF2;
   --point-color3: #59574F;
-  --point-color4: #107243;
+  --point-color4: #bb7642;
 
   /* 배경 그라데이션용 컬러 */
-  --bg-Cdeep-color1: #107243;
+  --bg-Cdeep-color1: #bb7642;
   --bg-Cdeep-color2: #59574F;
   --bg-Cdeep-color3: #231e20;
   --bg-Cdeep-color4: #E9EDF2;
 
   /* 메인 & 서브 컬러 */
   --main-color: #59574F;
-  --main-color-deep: #107243;
+  --main-color-deep: #bb7642;
   --sub-color1: #231e20;
   --sub-color2: #E9EDF2;
 
@@ -301,7 +301,7 @@ h2 {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: #f6e9d9;
+  background: #f2ede7;
   position: relative;
   flex-direction: column;
   padding-block: 10vh;
@@ -342,7 +342,7 @@ h2 {
 }
 
 .marquee_item {
-  color: #c4bebe;
+  color: #fff;
   opacity: .9;
   font-weight: 200;
 }
@@ -510,7 +510,7 @@ h2 {
 }
 
 .info_section .card {
-  background: #fff;
+  background: #eee;
   border-radius: 24px;
   padding: 48px 40px;
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.12);
@@ -570,7 +570,7 @@ h2 {
 }
 
 .info_section .card h4 {
-  color: #107243;
+  color: #000;
   font-size: 1.75rem;
   font-weight: 700;
   margin: 0;
@@ -603,18 +603,18 @@ h2 {
   display: inline-flex;
   align-items: center;
   padding: 16px 32px;
-  background: rgba(64, 31, 13, 0.1);
-  color: #107243;
+  background: #e8d3c4;
+  color: var(--bg);
   text-decoration: none;
   border-radius: 28px;
   font-size: 1.05rem;
   font-weight: 500;
   transition: all 0.3s ease;
-  border: 1px solid rgba(64, 31, 13, 0.2);
+  border: 1px solid #d0b29d;
 }
 
 .info_section .link-go a:hover {
-  background: #107243;
+  background: #916240;
   color: #E9EDF2;
   transform: translateY(-2px);
   box-shadow: 0 4px 12px rgba(64, 31, 13, 0.3);
@@ -815,7 +815,7 @@ h2 {
   position: relative;
   height: 100vh;
   overflow: hidden;
-  background: #eee;
+  background: #f2ede7;
 }
 
 .track {
@@ -846,17 +846,23 @@ h2 {
   padding: 100px 50px;
 }
 
-.h_item .tit {}
 
-.h_item .tit h2 {
-  font-size: 40px;
+.h_item .tit h2{
+  font-size: 25px;
 }
 
-.h_item .tit p {}
+.h_item .tit h2 img {
+  max-width: 100px;
+  height: auto;
+}
+.h_item .tit-we h2 img {
+  max-width: 60px;
+}
 
-.h_item .txt {}
-
-.h_item .txt p {}
+.h_item .tit p {
+  font-size: 40px;
+  font-weight: 600;
+}
 
 .h_item::before {
   content: '';
@@ -925,7 +931,7 @@ h2 {
 /* ===== Stats (counters) ===== */
 .stats_section {
   text-align: center;
-  background: #107243;
+  background: #bb7642;
 }
 
 .stats_grid {
@@ -936,7 +942,7 @@ h2 {
 }
 
 .stat_box {
-  background: #3E3C36;
+  background: #916240;
   border-radius: var(--round);
   padding: 24px;
   outline: 1px solid rgba(255, 255, 255, .06);
@@ -952,7 +958,7 @@ h2 {
 /* ===== CTA ===== */
 .cta_section {
   text-align: center;
-  background: #107243;
+  background: #bb7642;
 }
 
 .cta_section h2 {
@@ -972,7 +978,7 @@ h2 {
   padding: 14px 20px;
   border-radius: 999px;
   background: #fff;
-  color: #107243;
+  color: #bb7642;
   font-weight: 800;
   transform: translateY(20px);
   opacity: 0
