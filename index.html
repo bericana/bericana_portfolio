@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>BackSJ — Product Designer & Front-End</title>
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="https://unpkg.com/@studio-freight/lenis@1.0.35/dist/lenis.min.js"></script>
+    <script src="js/main.js" defer></script>
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="site_header" id="site_header">
+        <div class="container header_row">
+            <h1 class="brand_logo title_gra"><img src="asset/fylogo.png" alt="FlowYulLab"></h1>
+            <nav class="primary_nav">
+                <a href="#hero">Home</a>
+                <a href="#projects">Projects</a>
+                <a href="#showcase">Showcase</a>
+                <a href="#info">Info</a>
+                <a href="#gallery">Gallery</a>
+                <a href="#stats">Stats</a>
+            </nav>
+            <button class="menu_toggle" id="menu_toggle" aria-label="open menu">☰</button>
+        </div>
+        <div class="mobile_panel" id="mobile_panel">
+            <nav class="mobile_menu">
+                <a href="#hero">Home</a>
+                <a href="#projects">Projects</a>
+                <a href="#showcase">Showcase</a>
+                <a href="#info">Info</a>
+                <a href="#gallery">Gallery</a>
+                <a href="#stats">Stats</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero -->
+    <section id="hero" class="hero_section">
+        <figure>
+            <video src="asset/vid_logo.mp4" loop autoplay muted></video>
+        </figure>
+        <div class="container">
+            <h1 class="hero_title">BACK SEUNGJU <br> UX/UI PORTFOLIO</h1>
+            <p class="hero_sub">저는 사람들과의 연결을 바탕으로 브랜드를 의미 있고 매력적인 경험으로 만드는 UX/UI 디자이너입니다.</p>
+            <span class="magnet_zone"><a href="#projects" class="hero_cta cta_btn">Explore Work →</a></span>
+        </div>
+    </section>
+
+    <!-- Marquee -->
+    <section class="marquee_section features_section">
+        <div class="marquee_wrap">
+            <div class="marquee_row">
+                <div class="marquee_item title_gra">FIGMA</div>
+                <div class="marquee_item title_gra">PHOTOSHOP</div>
+                <div class="marquee_item title_gra">ILLUSTRATOR</div>
+                <div class="marquee_item title_gra">AFTER EFFECTS</div>
+                <div class="marquee_item title_gra">INDESIGN</div>
+                <div class="marquee_item title_gra">HTML</div>
+                <div class="marquee_item title_gra">CSS</div>
+            </div>
+        </div>
+        <div class="container" id="projects">
+            <h2>My Fields <strong>of Study</strong></h2>
+            <div class="features_grid ">
+                <article class="feature_card tilt_card">
+                    <div class="tilt_layer">
+                        <h3><strong>예체능</strong><span>미술고 디자인전공</span></h3>
+                        <p> <br>시각 예술 기반의 디자인 원리와 <br> 조형 감각을 체계적으로 학습했습니다.<br> <br> 2005.03 ~ 2008.02</p>
+                    </div>
+                </article>
+                <article class="feature_card tilt_card">
+                    <div class="tilt_layer">
+                        <h3><strong>IT대학</strong><span>숭실대 글로벌미디어학부</span></h3>
+                        <p> <br>UX·디지털미디어·웹 커뮤니케이션 중심의 <br> 융합형 미디어 학문을 전공했습니다.<br> <br> 2008.03 ~ 2013.08</p>
+                    </div>
+                </article>
+                <article class="feature_card tilt_card">
+                    <div class="tilt_layer">
+                        <h3><strong>심리학</strong><span>한양대 성인상담전공</span></h3>
+                        <p> <br>성인의 정서·행동 패턴을 이해하는 <br>상담심리 기반의 인사이트를 쌓았습니다.<br> <br> 2018.09 ~ 2023.02</p>
+                    </div>
+                </article>
+            </div>
+        </div>
+
+        <div class="marquee_wrap reverse">
+            <div class="marquee_row">
+                <div class="marquee_item title_gra2">PORTFOLIO</div>
+                <div class="marquee_item title_gra2">INTERACTIONS</div>
+                <div class="marquee_item title_gra2">BRANDING</div>
+                <div class="marquee_item title_gra2">WEBGL</div>
+                <div class="marquee_item title_gra2">GSAP</div>
+                <div class="marquee_item title_gra2">UX WRITING</div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <!-- 
+    <div class="spacer"></div> -->
+
+    <!--info_section -->
+    <section id="info" class="info_section">
+        <div class="wrapper">
+            <div class="info">
+                <h2>UX/UI <strong>Designer</strong></h2>
+                <div class="sticky_box">
+                </div>
+            </div>
+
+            <div class="projects">
+                <div class="card">
+                    <h4>🔍 Project | Studio Dragon Redesign</h4>
+                    <p>스튜디오 드래곤 팀 프로젝트에서 디자인 팀장을 맡아 스타일 가이드를 총괄하고, 메인 페이지 디자인을 담당했습니다.</p>
+                    <div class="link-go">
+                        <a href="#" target="_blank">랜딩 페이지</a>
+                        <a href="https://www.figma.com/deck/E1m9UD9QFX8vzMYbFf6CDW/-%ED%8C%80%ED%94%8C1-2%EC%A1%B0--%EA%B2%B0%EA%B3%BC%EB%B3%B4%EA%B3%A0%EC%84%9C_studiodragon-%EC%8A%A4%ED%8A%9C%EB%94%94%EC%98%A4%EB%93%9C%EB%9E%98%EA%B3%A4---%EB%B3%B5%EC%82%AC-?node-id=1-42&viewport=-164%2C-159%2C0.75&t=WzeZezoGppLXpgtR-1&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1" target="_blank">프로젝트 기획서</a>
+                        <a href="https://root-ryu.github.io/StudioDragon/" target="_blank">프로젝트 링크</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <h4>🔍 Project | KT Membership Redesign</h4>
+                    <p>KT 멤버십 리뉴얼 프로젝트에서 사용자 흐름 재정립과 메인 구조 개선을 중심으로 브랜딩, 기획, UX/UI 디자인을 하였습니다.</p>
+                    <div class="link-go">
+                        <a href="#" target="_blank">랜딩 페이지</a>
+                        <a href="#" target="_blank">프로젝트 기획서</a>
+                        <a href="#" target="_blank">프로젝트 링크</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <h4>🔍 Project | Tous Les Jours Redesign</h4>
+                    <p>뚜레쥬르 리뉴얼은 개인 프로젝트로, 전체 디자인과 프론트엔드 코딩과 UX/UI 디자인을 작업입니다.</p>
+                    <div class="link-go">
+                        <a href="#" target="_blank">랜딩 페이지</a>
+                        <!-- <a href="#" target="_blank">프로젝트 기획서</a> -->
+                        <a href="https://bericana.github.io/touslesjours/" target="_blank">프로젝트 링크</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Showcase (Pin + Floating Photos) -->
+    <section id="showcase" class="pin_scene">
+        <div class="pin_layer">
+            <div class="pin_bg" id="pin_bg"
+                style="background-image:url('asset/bg_01.png')">
+            </div>
+            <div class="pin_overlay"></div>
+            <div class="pin_copy">
+                <h2>Content Design Portfolio</h2>
+                <p>These are the design works I’ve created over the past eight years as a content designer.
+                    <br>콘텐츠 디자이너로서 지난 8년간 작업한 디자인 작업물입니다.
+                </p>
+            </div>
+            <div class="float_wrap">
+                <div class="photo p1">
+                </div>
+                <div class="photo p2">
+                </div>
+                <div class="photo p3">
+                </div>
+                <div class="photo p4">
+                </div>
+                <div class="photo p5">
+                </div>
+                <div class="photo p6">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Horizontal Gallery -->
+    <section id="gallery" class="horizontal_section">
+        <div class="track">
+            <a href="https://nickel-distance-e89.notion.site/20a31199c4e980529beccadb6f6d9f51?pvs=143" class="h_item" target="_blank"></a>
+            <a href="https://nickel-distance-e89.notion.site/ed4c90b6cf1c48c7936d88259c24ffd9?pvs=143" class="h_item" target="_blank"></a>
+            <a href="https://nickel-distance-e89.notion.site/fc5537a3f0674ab8a5b6550e2df51ed5?pvs=143" class="h_item" target="_blank"></a>
+            <a href="https://nickel-distance-e89.notion.site/bcad498a26e140169e0d6874253a8c24?pvs=143" class="h_item" target="_blank"></a>
+            <a href="https://nickel-distance-e89.notion.site/baf4d05d4b5e41c7b2813f97e325ceff?pvs=143" class="h_item" target="_blank"></a>
+        </div>
+    </section>
+
+    <!-- Stats (counters) -->
+    <section id="stats" class="stats_section">
+        <div class="container">
+            <h2>My Years as a Designer</h2>
+            <div class="stats_grid">
+                <div class="stat_box">
+                    <div class="stat_value" data-count-to="2920">0</div>
+                    <div class="stat_label">Days</div>
+                </div>
+                <div class="stat_box">
+                    <div class="stat_value" data-count-to="96">0</div>
+                    <div class="stat_label">Months</div>
+                </div>
+                <div class="stat_box">
+                    <div class="stat_value" data-count-to="8">0</div>
+                    <div class="stat_label">Years</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section id="contact" class="cta_section">
+        <div class="container">
+            <h2>변화를 만드는 학습 경험을 설계하는 디자이너가 되겠습니다.</h2>
+            <p>프로덕트 디자이너로서 UX/UI를 발전시키고, 더 나은 사용자 경험을 만드는 일에 함께하고 싶습니다. 귀사와 함께 성장하며 가치 있는 결과를 만들어가고 싶습니다.</p>
+            <span class="magnet_zone"><a href="mailto:01196511263@naver.com" class="cta_btn">Get in touch →</a></span>
+        </div>
+    </section>
+
+
+</body>
+
+</html>
