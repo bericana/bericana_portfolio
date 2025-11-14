@@ -220,6 +220,7 @@ h1.brand_logo img {
   border-radius: 8px;
   background: rgba(255, 255, 255, .03);
   cursor: pointer;
+  color: #000;
 }
 
 /* ===== Hero ===== */
