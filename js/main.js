@@ -142,7 +142,6 @@ gsap.timeline({ defaults: { duration: 0.8, ease: "power2.out" } })
   document.querySelectorAll(".marquee_wrap").forEach((wrap) => {
     const row = wrap.querySelector(".marquee_row");
     const rowWidth = row.scrollWidth;
-    const gapSize = 100; // 각 행 사이의 추가 간격
 
     // 최소 2세트 이상 복제
     for (let i = 1; i < 10; i++) {
@@ -157,14 +156,14 @@ gsap.timeline({ defaults: { duration: 0.8, ease: "power2.out" } })
       x += dir; // 이동
 
       rows.forEach((r, i) => {
-        let offset = x + i * (rowWidth + gapSize);
+        let offset = x + i * rowWidth;
 
         if (dir === -1) {
           // ← 왼쪽 이동
-          if (offset <= -(rowWidth + gapSize)) offset += (rowWidth + gapSize) * rows.length;
+          if (offset <= -rowWidth) offset += rowWidth * rows.length;
         } else {
           // → 오른쪽 이동
-          if (offset >= (rowWidth + gapSize) * (rows.length - 1)) offset -= (rowWidth + gapSize) * rows.length;
+          if (offset >= rowWidth * (rows.length - 1)) offset -= rowWidth * rows.length;
         }
 
         r.style.transform = `translateX(${offset}px)`;
@@ -249,8 +248,8 @@ document.querySelectorAll(".feature_card").forEach((card) => {
     glass.style.background = `
       radial-gradient(
         circle at ${x}px ${y}px,
-        rgba(233, 237, 242, 0.4),
-        rgba(233, 237, 242, 0) 30%
+        rgba(240,222,68, 0.4),
+        rgba(196,196,68, 0) 30%
       )
     `;
   });
